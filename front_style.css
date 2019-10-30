@@ -1,0 +1,15 @@
+body{
+    background-color: #BFEFFF;
+    text-align: center;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    width:700px;
+    height:360px;
+}
+
+
+#FAQ{
+    background-color: #BFEFFF;
+}

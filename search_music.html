@@ -1,0 +1,95 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="popupForm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href="/g9/front_style.css" rel="stylesheet">
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.2.2.js"></script>
+     <script src = "main.js"></script>
+     <script src="https://apis.google.com/js/client.js?onload=loadPlayer"></script>
+        <title>DatStream</title>
+        <link rel="icon" href="http://www.goodearthgraphics.com/virtcave/karst/fern_1024.JPG">
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/g9/front_page.html">DatStream</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/g9/front_page.html">Home</a></li>
+                    <li><a href="/g9/about_page.html">About</a></li>
+                    <li><a href="/g9/founders_page.html">Founders</a></li>
+                    <li class="nav-item dropdown" style="margin-top: 8px;">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Playlists
+                            <span class="caret"></span></button>
+                        <ul id= "playlistAppend" class="dropdown-menu">
+                            <li><a href="getPlaylist.html">Sad Trombone</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/g9/search_music.html">Search Music</a></li>
+                    <li><a href="/g9/sign_up_page.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="/g9/login_page.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!--<div id="panel">-->
+          <!--<input type="button" class="button" value="1 " id="btn1">
+          <input type="button" class="button" value="2" id="btn2">
+          <input type="button" class="button" value="3" id="btn3">-->
+          <br>
+         <!-- <input type="text" id="valueFromMyModal">-->
+          <!-- Dialog Box-->
+          <div class="dialog" id="myform">
+            <!--<form>-->
+              <label id="valueFromMyButton"></label>
+              <p id ="trackToAddTitle"></p>
+              <!--<input type="text" id="name">-->
+              <div align="center">
+                <input type="button" value="Ok" id="btnOK">
+              </div>
+            <!--</form>-->
+          </div>
+        
+        <button id="playQueue">Play Queue</button>
+        <button id="next">Next</button>
+        <div class = "search"> 
+            <input type = "text" id="search"></input>
+            <input type = "button" id="btnSearch" value = "search"></input>
+        </div>
+        <div class="col-lg-12" id="results">
+            <div class="col-lg-4">
+        <ul id="soundcloud_results">
+            
+        </ul>
+            </div>
+            <div class="col-lg-4">
+        <ul id="spotify_results">
+
+        </ul>
+            </div>
+                <div class="col-lg-4">
+        <ul id="youtube_results">
+
+        </ul>
+                </div>
+        </div>
+        <div id="player">
+
+        
+        
+        </div>
+    </body>
+
+</html>
